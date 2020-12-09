@@ -304,13 +304,13 @@ def show_venue(venue_id):
 #  ----------------------------------------------------------------
 
 @app.route('/venues/create', methods=['GET'])
-"""
+def create_venue_form():
+  """
   Creates a new venue in the Venue database 
 
   Returns: 
     on GET: Populates the venue form
   """
-def create_venue_form():
   form = VenueForm()
   return render_template('forms/new_venue.html', form=form)
 
@@ -729,13 +729,13 @@ def edit_venue_submission(venue_id):
 #  ----------------------------------------------------------------
 
 @app.route('/artists/create', methods=['GET'])
- """
+def create_artist_form():
+  """
   Creates a new artist in the Artist database 
 
   Returns: 
     on GET: Populates artist form.
   """
-def create_artist_form():
   form = ArtistForm()
   return render_template('forms/new_artist.html', form=form)
 

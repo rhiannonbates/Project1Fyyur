@@ -5,6 +5,6 @@ flask-wtf
 virtualenv
 SQLAlchemy
 postgres
-flask
-flask-Migrate
-flask_sqlalchemy
+Flask
+flask-migrate
+Flask_SQLAlchemy
