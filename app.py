@@ -21,7 +21,6 @@ from models import app, db, Venue, Artist, Shows
 #----------------------------------------------------------------------------#
 
 moment = Moment(app)
-app.config.from_object('config')
 db.init_app(app)
 
 #----------------------------------------------------------------------------#
